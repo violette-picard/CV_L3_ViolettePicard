@@ -1,0 +1,325 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-family: 'Arial';
+}
+
+h2{
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+header{
+    background-image: url("../assets/images/photos.jpg");
+    background-attachment: display;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.title-grid-photo{
+    text-align: center;
+    font-size: 40px;
+}
+
+.title-grid-photo h3{
+    display: block;
+    font-size: 40px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav li{
+    list-style: none;
+    
+}
+.logo h2{
+    color: white;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 30px;
+    font: 'Arial';
+    font-weight: bold;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;  
+    margin: 10px;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 7px 29px 0px #515365;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.text-center h1 {
+    display: block;
+    font-size: 80px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.grid-area{
+    width: 1200px;
+    margin: 10px auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    padding: 20px;
+
+}
+
+.grid-photo{
+    width: 1200px;
+    margin: 10px auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-photo img{
+    border-radius: 15px;
+}
+
+.grid-photo h2{
+    font-size: 25px;
+}
+
+#mont-blanc-picture{
+    width: 100%;
+}
+
+#wordpress-picture{
+    width: 100%;
+}
+
+.grid-white{
+    background-color: white;
+    border-radius: 10px;
+    padding:20px;
+    text-align: center;
+}
+
+.grid-white h2 {
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.grid-white li {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 25px;
+}
+
+.grid-white p {
+    font-size: 25px;
+}
+
+footer{
+    background-color: #111635;
+    height: 250px;
+    color:white;
+    padding:20px;
+}
+
+.footer-title-box{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 0;
+}
+
+.footer-title-box h2{
+    margin:0;
+    font-size: 50px;
+}
+
+.contact-box{
+    margin: 10px;
+    display:flex;
+    justify-content: center;   
+}
+
+.contact-box ul {
+    margin: 10px;
+}
+
+.contact-box li{
+    list-style: none;
+    padding: 10px;
+    font-size:30px;
+    padding: 5px;
+}
+
+.contact-box a{
+    color: white;
+
+}
+
+.menu_responsive {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+    header {
+        background-repeat:no-repeat;
+        background-position:top left;
+        position: relative;
+        
+    }
+
+    .menu_header {
+        display: none;
+    }
+
+    .text-center h1 {
+        display: block;
+        font-size: 50px;
+        margin-block-start: 0.3em;
+        margin-block-end: 0.3em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .menu_responsive {
+        display: block;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 30px;
+        font: 'Arial';
+        font-weight: bold;
+    }
+    .menu_responsive h3 {
+        text-shadow: 4px 4px 4px black;
+    }
+
+    #danse-picture{
+        width: 400px;
+    }
+
+    #wordpress-picture{
+        width:  400px;
+    }
+    .grid-photo, .grid-area {
+        width :auto;
+    }
+    
+    .grid-photo .grid-white h2{
+        font-size: 30px;
+    } 
+}
+
+
+@media screen and (max-device-width: 540px) {
+    header {
+        background-repeat:no-repeat;
+        background-position:top left;
+        position: relative;
+        
+    }
+
+    .menu_header {
+        display: none;
+    }
+
+    .text-center h1 {
+        display: block;
+        font-size: 80px;
+        margin-block-start: 0.3em;
+        margin-block-end: 0.3em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .menu_responsive {
+        display: block;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 30px;
+        font: 'Arial';
+        font-weight: bold;
+    }
+    .menu_responsive h3 {
+        text-shadow: 4px 4px 4px black;
+    }
+
+    #danse-picture{
+        width: 400px;
+    }
+
+    #wordpress-picture{
+        width:  400px;
+    }
+    .grid-photo, .grid-area {
+        width :auto;
+    }
+    
+    .grid-photo .grid-white h2{
+        font-size: 30px;
+    } 
+}
+
+
